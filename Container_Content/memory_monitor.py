@@ -6,6 +6,15 @@ import sys
 import zipfile
 
 
+Curpath = os.getenv('CURPATH', '/usr/src/app')
+Disk_Backup = os.path.join(Curpath, 'Disk_Backup')
+try:
+    # Create the Disk_Backup, avoiding an error if it already exists
+    os.makedirs(Disk_Backup, exist_ok=True)
+    print(f"Directory '{Disk_Backup}' created successfully.")
+except OSError as error:
+    print(f"Error: {error}")
+
 # Memory that can be allocated without affecting system performance 
 def get_memory_available():
     with open("/proc/meminfo", "r") as meminfo:
@@ -99,11 +108,16 @@ def zipIfNeeded(directory, zipCount, X_KB):
     file_size = os.path.getsize(file2zip)
     # Set where the zip file should be placed once created
     zipFullPath = os.path.join(directory, f'ZipArchive{zipCount}.zip')
+    zipFullPathDisk = os.path.join(Disk_Backup, f'ZipArchive{zipCount}.zip')
+
     # If the file has reached X KB, compress it using zip 
     if file_size >= X_KB:
         # zip 'file2zip', have name when extracted be 'ZipArchive.txt', save zipped file to zipFullPath
         with zipfile.ZipFile(zipFullPath, 'w') as zip:
                 zip.write(file2zip, arcname=f'ZipArchive{zipCount}.txt')
+        # Compress and store the zip in the Disk_Backup directory
+        with zipfile.ZipFile(zipFullPathDisk, 'w') as zip:
+            zip.write(file2zip, arcname=f'ZipArchive{zipCount}.txt') 
         # Indicate a zip has occurred, then delete the old .txt file to save space 
         zipCount += 1 
         os.remove(file2zip)

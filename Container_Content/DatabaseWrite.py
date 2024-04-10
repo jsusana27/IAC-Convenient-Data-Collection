@@ -153,7 +153,7 @@ while True:
                 
         
 # This portion backs up the data if it wasn't successful and sends any data in the backup text file to the database
-        maxBackupSize = 5e3
+        maxBackupSize = 500e6 # 500MB backup size 
         if not successfulSend:
             print("CONNECTION IS DOWN--BACKING UP DATA", flush=True)
             write_to_backup(backup_file_path, fileContents)
