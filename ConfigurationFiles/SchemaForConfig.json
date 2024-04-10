@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "CompanyName": {
+      "type": "string"
+    },
+    "CompanyLocation": {
+      "type": "string"
+    },
+    "ContactName": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "EmailAddress": {
+      "type": "string"
+    },
+    "StreetAddress": {
+      "type": "string"
+    },
+    "PCName": {
+      "type": "string"
+    },
+    "WebserverAddress": {
+      "type": "string"
+    },
+    "PHP-Path": {
+      "type": "string"
+    },
+    "NumberOfNodesUsed": {
+      "type": "integer"
+    },
+    "ListOfSensorUnits": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "DatabaseSendIntervalInSeconds": {
+      "type": "integer"
+    },
+    "SensingPorts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "NodeName": {
+            "type": "string"
+          },
+          "SensorPortLabel": {
+            "type": "string"
+          },
+          "PortType": {
+            "type": "string",
+            "default": "Sensing"
+          },
+          "PortName": {
+            "type": "string"
+          },
+          "SensorType": {
+            "type": "string"
+          },
+          "InputValueUnitName": {
+            "type": "string"
+          },
+          "InputValueUnitSymbol": {
+            "type": "string"
+          },
+          "BrandName": {
+            "type": "string"
+          },
+          "InputValueLowerBound": {
+            "type": "integer"
+          },
+          "InputValueUpperBound": {
+            "type": "integer"
+          },
+          "InputMeaningLowerBound": {
+            "type": "integer"
+          },
+          "InputMeaningUpperBound": {
+            "type": "integer"
+          },
+          "PollingIntervalInSeconds": {
+            "type": "integer",
+            "default": "5"
+          },
+          "FilterMethod": {
+            "type": "integer",
+            "default": "1"
+          },
+          "AttachedToEquipment": {
+            "type": "string"
+          },
+          "PreviousSampleTime": {
+            "type": "integer",
+            "default": "0"
+          },
+          "NumValuesCollected": {
+            "type": "integer",
+            "default": "0"
+          },
+          "ProcessedValue": {
+            "type": "integer",
+            "default": "0"
+          },
+          "Calibration": {
+            "type": "integer",
+            "default": "1"
+          },
+          "SensorModel": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "NodeName",
+          "SensorPortLabel",
+          "PortType",
+          "PortName",
+          "SensorType",
+          "InputValueUnitName",
+          "InputValueUnitSymbol",
+          "BrandName",
+          "InputValueLowerBound",
+          "InputValueUpperBound",
+          "InputMeaningLowerBound",
+          "InputMeaningUpperBound",
+          "PollingIntervalInSeconds",
+          "FilterMethod",
+          "AttachedToEquipment",
+          "PreviousSampleTime",
+          "NumValuesCollected",
+          "ProcessedValue",
+          "Calibration",
+          "SensorModel"
+        ]
+      }
+    },
+    "SwitchingPorts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "NodeName": {
+            "type": "string"
+          },
+          "PortType": {
+            "type": "string",
+            "default": "Switch"
+          },
+          "PortName": {
+            "type": "string"
+          },
+          "PortLabel": {
+            "type": "string"
+          },
+          "PollingIntervalInSeconds": {
+            "type": "integer",
+            "default": "5"
+          },
+          "AttachedToEquipment": {
+            "type": "string"
+          },
+          "SwitchStatus": {
+            "type": "integer",
+            "default": "0"
+          },
+          "ControlType": {
+            "type": "string",
+            "default": "Switch"
+          },
+          "InputValueUnitName": {
+            "type": "string",
+            "default": "Binary"
+          },
+          "InputValueUnitSymbol": {
+            "type": "string",
+            "default": "bin"
+          },
+          "BrandName": {
+            "type": "string"
+          },
+          "LowerLimit": {
+            "type": "integer",
+            "default": "0"
+          },
+          "UpperLimit": {
+            "type": "integer",
+            "default": "1"
+          },
+          "PreviousSampleTime": {
+            "type": "integer",
+            "default": "0"
+          },
+
+          "Model": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "NodeName",
+          "PortType",
+          "PortName",
+          "PortLabel",
+          "PollingIntervalInSeconds",
+          "AttachedToEquipment",
+          "SwitchStatus",
+          "ControlType",
+          "InputValueUnitName",
+          "InputValueUnitSymbol",
+          "BrandName",
+          "LowerLimit",
+          "UpperLimit",
+          "PreviousSampleTime",
+          "Model"
+        ]
+      }
+    }
+  },
+  "required": [
+    "CompanyName",
+    "CompanyLocation",
+    "ContactName",
+    "PhoneNumber",
+    "EmailAddress",
+    "StreetAddress",
+    "PCName",
+    "WebserverAddress",
+    "PHP-Path",
+    "NumberOfNodesUsed",
+    "ListOfSensorUnits",
+    "DatabaseSendIntervalInSeconds",
+    "SensingPorts",
+    "SwitchingPorts"
+  ]
+}
