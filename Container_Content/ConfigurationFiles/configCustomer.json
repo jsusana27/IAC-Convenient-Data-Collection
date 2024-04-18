@@ -155,7 +155,7 @@
   ],
   "SwitchingPorts": [
     {
-      "NodeName": "mini_smart_plug",
+      "NodeName": "SmartPlug",
       "PortType": "switch",
       "PortName": "Switch",
       "PortLabel": "mini_smart_plug",
