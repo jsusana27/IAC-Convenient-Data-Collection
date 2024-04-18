@@ -109,20 +109,20 @@ while True:
 
     # Create fresh files to send, and reset flags 
     if os.path.isfile(communication_flag_path) or os.path.isfile(communication_flag_actuator_path):
-        if os.path.isfile(formatted_system_data_path) or os.path.isfile(formatted_system_data_actuator_path): 
-            fileContents = ""
+        fileContents = ""
+        if os.path.isfile(formatted_system_data_path):
             if os.path.isfile(communication_flag_path):
                 try:
                     os.remove(communication_flag_path)
                 except Exception:
                     print("CommunicationFlag is not deleted", flush=True)
-                    pass
-                
+                    pass               
                 with open(formatted_system_data_path, "r+") as file:
                     fileContents = file.read()
                     file.seek(0)  # Move to the start of the file before truncating
                     file.truncate()
 
+        elif os.path.isfile(formatted_system_data_actuator_path): 
             fileContentsActuator = ""
             if os.path.isfile(communication_flag_actuator_path):
                 try:
@@ -134,8 +134,8 @@ while True:
                     fileContentsActuator = file2.read()
                     file2.seek(0)  # Move to the start of the file before truncating
                     file2.truncate()
-                    
-            fileContents= fileContents + fileContentsActuator
+
+        fileContents= fileContents + fileContentsActuator
 
         if debug:
             print("FILE CONTENTS: {}".format(fileContents), flush=True)
