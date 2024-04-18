@@ -11,6 +11,10 @@ read image_name
 echo "Enter the Docker image tag:"
 read image_tag
 
+# Concatenate the image name and tag, then save to a file
+image_full="$image_name:$image_tag"
+echo "$image_full" > image_full_details.txt
+
 # Build directory for Dockerfile
 build_dir="/home/admin/Conv-Data/IAC-Convenient-Data-Collection/Container_Content"
 
