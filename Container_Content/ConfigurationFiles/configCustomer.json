@@ -151,33 +151,7 @@
       "ProcessedValue": 0,
       "Calibration": 1,
       "IsDataReadyToSent": 0
-    },
-    
-    {
-      "NodeName": "multisensor_6",
-      "SensorPortLabel": "D-Humidity101: 0-100RHS",
-      "PortType": "binary_sensor",
-      "PortName": "low_battery_level",
-      "SensorType": "Humidity",
-      "InputValueUnitName": "Percent",
-      "InputValueUnitSymbol": "%",
-      "BrandName": "ASAIR",
-      "AssociatedRaspberryPiUnit": "RP001",
-      "Network Source": "Z-Wave"  ,
-      "AttachedToEquipment": "snode_102",
-      "SensorModel": "DHT22",
-      "InputValueLowerBound": 0,
-      "InputValueUpperBound": 100,
-      "InputMeaningLowerBound": 0,
-      "InputMeaningUpperBound": 100,
-      "PollingIntervalInSeconds": 15,
-      "FilterMethod": 1,
-      "PreviousSampleTime": 0,
-      "NumValuesCollected": 0,
-      "ProcessedValue": 0,
-      "Calibration": 1,
-      "IsDataReadyToSent": 0
-    } 
+    }, 
   ],
   "SwitchingPorts": [
     {
