@@ -20,7 +20,8 @@ docker run --name "$image_name" \
   --network host \
   -v /dev/shm:/dev/shm \
   -v /home/admin/senior-design-testing-folder/local-volume:/usr/src/app/BackupData \
-  -dit "$image_name:$image_tag" 
+  -it "$image_name:$image_tag" /bin/bash
+  #-dit "$image_name:$image_tag" /bin/bash 
 
 echo "Running detached (in background)"
 
