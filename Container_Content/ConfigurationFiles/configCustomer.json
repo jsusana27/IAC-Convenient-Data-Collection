@@ -158,7 +158,7 @@
       "NodeName": "mini_smart_plug",
       "PortType": "switch",
       "PortName": "Switch",
-      "PortLabel": "",
+      "PortLabel": "mini_smart_plug",
       "PollingIntervalInSeconds": 15,
       "AttachedToEquipment": "SmartPlug",
       "SwitchStatus": 0,
