@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# List Docker images whose names contain 'iac', case-insensitively
+echo "Listing all Docker images related to IAC:"
+docker images --format '{{.Repository}}:{{.Tag}}' | grep -i 'iac'
+
 # Ask the user for the image name and tag
 echo "Enter the Docker image name:"
 read image_name
