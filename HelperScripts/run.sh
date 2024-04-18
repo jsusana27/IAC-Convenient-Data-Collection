@@ -1,19 +1,26 @@
 #!/bin/bash
 
-# Build and run the container. Use the host network for easier communication with homeassistant container 
-docker build -t test:test .
+# Ask the user for the image name and tag
+echo "Enter the Docker image name:"
+read image_name
+echo "Enter the Docker image tag:"
+read image_tag
+
+# Build directory for Dockerfile
+build_dir="~/Conv-Data/IAC-Convenient-Data-Collection/Container_Content"
+
+# Build and run the container. Use the host network for easier communication with homeassistant container
+docker build -t "$image_name:$image_tag" "$build_dir"
 
 #docker run --name test --network host -v /dev/shm:/dev/shm -v /home/admin/senior-design-testing-folder/local-volume:/usr/src/app/BackupData -it test:test /bin/bash
 
 # Run the container
-# Set up SD card volume and RAM stored volume 
-docker run --name test \
+# Set up SD card volume and RAM stored volume
+docker run --name "$image_name" \
   --network host \
   -v /dev/shm:/dev/shm \
   -v /home/admin/senior-design-testing-folder/local-volume:/usr/src/app/BackupData \
-  -dit test:test #/bin/bash
-
-# Note: the main terminal can only read data created by the container, but cannot modify it
+  -dit "$image_name:$image_tag" 
 
 echo "Running detached (in background)"
 
@@ -29,4 +36,5 @@ else
     # If none of the above conditions are met, it implies the file exists, is not empty, and does not contain "True"
     echo "The 'cleaned' file was already set and does not contain 'True'."
 fi
+
 
