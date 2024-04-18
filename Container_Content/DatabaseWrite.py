@@ -110,6 +110,7 @@ while True:
     # Create fresh files to send, and reset flags 
     if os.path.isfile(communication_flag_path) or os.path.isfile(communication_flag_actuator_path):
         fileContents = ""
+        fileContentsActuator = ""
         if os.path.isfile(formatted_system_data_path):
             if os.path.isfile(communication_flag_path):
                 try:
@@ -122,8 +123,7 @@ while True:
                     file.seek(0)  # Move to the start of the file before truncating
                     file.truncate()
 
-        elif os.path.isfile(formatted_system_data_actuator_path): 
-            fileContentsActuator = ""
+        if os.path.isfile(formatted_system_data_actuator_path): 
             if os.path.isfile(communication_flag_actuator_path):
                 try:
                     os.remove(communication_flag_actuator_path)
