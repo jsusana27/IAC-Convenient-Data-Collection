@@ -11,7 +11,7 @@ echo "Enter the Docker image tag:"
 read image_tag
 
 # Build directory for Dockerfile
-build_dir="~/Conv-Data/IAC-Convenient-Data-Collection/Container_Content"
+build_dir="/home/admin/Conv-Data/IAC-Convenient-Data-Collection/Container_Content"
 
 # Build and run the container. Use the host network for easier communication with homeassistant container
 docker build -t "$image_name:$image_tag" "$build_dir"
