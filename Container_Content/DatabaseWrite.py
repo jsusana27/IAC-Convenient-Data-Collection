@@ -104,36 +104,38 @@ if not os.path.isfile(backup_file_path):
 while True:
     communication_flag_path = os.path.join(RAM_PATH, "CommunicationFlag.txt") # fixthis should be going to RAM not disk. Maybe ask Chien if this is what it's supposed
     communication_flag_actuator_path = os.path.join(RAM_PATH, "CommunicationFlagActuator.txt")
+    formatted_system_data_path = os.path.join(RAM_PATH, "FormattedSystemData.txt")
+    formatted_system_data_actuator_path = os.path.join(RAM_PATH, "FormattedSystemDataActuator.txt")
 
     # Create fresh files to send, and reset flags 
     if os.path.isfile(communication_flag_path) or os.path.isfile(communication_flag_actuator_path):
-        fileContents = ""
-        if os.path.isfile(communication_flag_path):
-            try:
-                os.remove(communication_flag_path)
-            except Exception:
-                print("CommunicationFlag is not deleted", flush=True)
-                pass
-            formatted_system_data_path = os.path.join(RAM_PATH, "FormattedSystemData.txt")
-            with open(formatted_system_data_path, "r+") as file:
-                fileContents = file.read()
-                file.seek(0)  # Move to the start of the file before truncating
-                file.truncate()
+        if os.path.isfile(formatted_system_data_path) or os.path.isfile(formatted_system_data_actuator_path): 
+            fileContents = ""
+            if os.path.isfile(communication_flag_path):
+                try:
+                    os.remove(communication_flag_path)
+                except Exception:
+                    print("CommunicationFlag is not deleted", flush=True)
+                    pass
+                
+                with open(formatted_system_data_path, "r+") as file:
+                    fileContents = file.read()
+                    file.seek(0)  # Move to the start of the file before truncating
+                    file.truncate()
 
-        fileContentsActuator = ""
-        if os.path.isfile(communication_flag_actuator_path):
-            try:
-                os.remove(communication_flag_actuator_path)
-            except Exception:
-                print("CommunicationFlagActuator is not deleted", flush=True)
-                pass
-            formatted_system_data_actuator_path = os.path.join(RAM_PATH, "FormattedSystemDataActuator.txt")
-            with open(formatted_system_data_actuator_path, "r+") as file2:
-                fileContentsActuator = file2.read()
-                file2.seek(0)  # Move to the start of the file before truncating
-                file2.truncate()
-
-        fileContents= fileContents + fileContentsActuator
+            fileContentsActuator = ""
+            if os.path.isfile(communication_flag_actuator_path):
+                try:
+                    os.remove(communication_flag_actuator_path)
+                except Exception:
+                    print("CommunicationFlagActuator is not deleted", flush=True)
+                    pass
+                with open(formatted_system_data_actuator_path, "r+") as file2:
+                    fileContentsActuator = file2.read()
+                    file2.seek(0)  # Move to the start of the file before truncating
+                    file2.truncate()
+                    
+            fileContents= fileContents + fileContentsActuator
 
         if debug:
             print("FILE CONTENTS: {}".format(fileContents), flush=True)
