@@ -36,7 +36,7 @@
       "InputValueUnitName": "Degrees Celsius",
       "InputValueUnitSymbol": "A",
       "BrandName": "AeoTec",
-      "AttachedToEquipment": "multsensor_6",
+      "AttachedToEquipment": "multisensor_6",
       "Network Source": "Z-Wave",
       "SensorModel": "ZW095-A",
       "AssociatedRaspberryPiUnit": "RP001",
