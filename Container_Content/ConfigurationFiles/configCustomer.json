@@ -37,7 +37,7 @@
       "InputValueUnitSymbol": "A",
       "BrandName": "AeoTec",
       "AttachedToEquipment": "multsensor_6",
-      "Network Source": "Z-Wave"  ,
+      "Network Source": "Z-Wave",
       "SensorModel": "ZW095-A",
       "AssociatedRaspberryPiUnit": "RP001",
       "InputValueLowerBound": 0,
