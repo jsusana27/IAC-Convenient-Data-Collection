@@ -7,7 +7,7 @@ HA_ENDPOINT="http://localhost:8123/api/config" # can use localhost, which will w
 SENSOR_ENDPOINT="http://localhost:8123/api/states/sensor." #http://localhost:8123/api/states/sensor.snode_102_node_status
 
 # Your Long-Lived Access Token
-ACCESS_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI0NDc4M2I2NGY0NGQ0YzhiODQ4OTkwNmE4NmEzMTY3NCIsImlhdCI6MTcxMDc4NTYzMSwiZXhwIjoyMDI2MTQ1NjMxfQ.svQMfjToDbpfI2wXrld6jdKx_nb62x3rJYj5Ebmy65E"
+ACCESS_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmYjk5NGJlNzlhZGI0NjczOTc3NWMwMWMwZjk0YjYwNyIsImlhdCI6MTcxMzQ2NzU1NywiZXhwIjoyMDI4ODI3NTU3fQ.8k5Y4idmkfKkvVPPE7A-AfnEBRD00yRHI2mnzlnVff4"
 # Function to test connectivity to the Home Assistant API
 test_api_connectivity() {
     response=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer ${ACCESS_TOKEN}" \
