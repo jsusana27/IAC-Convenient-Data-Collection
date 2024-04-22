@@ -6,7 +6,7 @@
   "EmailAddress": "",
   "StreetAddress": "",
   "PCName": "PC001",
-  "WebserverAddress": "https://in-engr-cymanii.engr.iupui.edu/TestEnvFlask/login",
+  "WebserverAddress": "https://in-engr-cymanii.engr.iupui.edu/TestEnv/login/add_company_specifics.php?database=ElectroSpec_01_14_2024&MsgID={}&msg={}",
   "PHP-Path": "/login/Boot_data.php",
   "DatabaseSendIntervalInSeconds": 15,
   "ActuatorSynchronizingIntervalInSeconds": 15,
