@@ -29,7 +29,7 @@
   ],
   "SensingPorts": [ 
     {
-      "NodeName": "PC2multisensor_6",
+      "NodeName": "pc2multisensor_6",
       "SensorPortLabel": "Air Temperature: 0-200 ",
       "PortType": "sensor",
       "PortName": "air_temperature",
@@ -54,7 +54,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "PC2multisensor_6",
+      "NodeName": "pc2multisensor_6",
       "SensorPortLabel": "Humidity: Level 20-80%",
       "PortType": "sensor",
       "PortName": "humidity",
@@ -79,7 +79,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "PC2multisensor_6",
+      "NodeName": "pc2multisensor_6",
       "SensorPortLabel": "Illuminance 0-30000 Lux",
       "PortType": "sensor",
       "PortName": "illuminance",
@@ -104,7 +104,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "PC2multisensor_6",
+      "NodeName": "pc2multisensor_6",
       "SensorPortLabel": "Ultraviolet 0-10 UV index",
       "PortType": "sensor",
       "PortName": "ultraviolet",
@@ -129,7 +129,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "PC2multisensor_6",
+      "NodeName": "pc2multisensor_6",
       "SensorPortLabel": "Battery level 0-100%",
       "PortType": "sensor",
       "PortName": "battery_level",
