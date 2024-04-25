@@ -29,7 +29,7 @@
   ],
   "SensingPorts": [ 
     {
-      "NodeName": "multisensor_6",
+      "NodeName": "PC2multisensor_6",
       "SensorPortLabel": "Air Temperature: 0-200 ",
       "PortType": "sensor",
       "PortName": "air_temperature",
@@ -37,7 +37,7 @@
       "InputValueUnitName": "Degrees Celsius",
       "InputValueUnitSymbol": "A",
       "BrandName": "AeoTec",
-      "AttachedToEquipment": "multisensor_6",
+      "AttachedToEquipment": "PC2multisensor_6",
       "Network Source": "Z-Wave",
       "SensorModel": "ZW095-A",
       "AssociatedRaspberryPiUnit": "RP001",
@@ -54,7 +54,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "multisensor_6",
+      "NodeName": "PC2multisensor_6",
       "SensorPortLabel": "Humidity: Level 20-80%",
       "PortType": "sensor",
       "PortName": "humidity",
@@ -64,7 +64,7 @@
       "BrandName": "Onset ",
       "AssociatedRaspberryPiUnit": "RP001",
       "Network Source": "Z-Wave"  ,
-      "AttachedToEquipment": "multisensor_6",
+      "AttachedToEquipment": "PC2multisensor_6",
       "SensorModel": "t-ash-g2-200",
       "InputValueLowerBound": 20,
       "InputValueUpperBound": 80,
@@ -79,7 +79,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "multisensor_6",
+      "NodeName": "PC2multisensor_6",
       "SensorPortLabel": "Illuminance 0-30000 Lux",
       "PortType": "sensor",
       "PortName": "illuminance",
@@ -89,7 +89,7 @@
       "BrandName": "ASAIR",
       "AssociatedRaspberryPiUnit": "RP001",
       "Network Source": "Z-Wave"  ,
-      "AttachedToEquipment": "multisensor_6",
+      "AttachedToEquipment": "PC2multisensor_6",
       "SensorModel": "DHT22",
       "InputValueLowerBound": 0,
       "InputValueUpperBound": 30000,
@@ -104,7 +104,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "multisensor_6",
+      "NodeName": "PC2multisensor_6",
       "SensorPortLabel": "Ultraviolet 0-10 UV index",
       "PortType": "sensor",
       "PortName": "ultraviolet",
@@ -114,7 +114,7 @@
       "BrandName": "ASAIR",
       "AssociatedRaspberryPiUnit": "RP001",
       "Network Source": "Z-Wave"  ,
-      "AttachedToEquipment": "multisensor_6",
+      "AttachedToEquipment": "PC2multisensor_6",
       "SensorModel": "DHT22",
       "InputValueLowerBound": 0,
       "InputValueUpperBound": 10,
@@ -129,7 +129,7 @@
       "IsDataReadyToSent": 0
     },
     {
-      "NodeName": "multisensor_6",
+      "NodeName": "PC2multisensor_6",
       "SensorPortLabel": "Battery level 0-100%",
       "PortType": "sensor",
       "PortName": "battery_level",
@@ -139,7 +139,7 @@
       "BrandName": "ASAIR",
       "AssociatedRaspberryPiUnit": "RP001",
       "Network Source": "Z-Wave"  ,
-      "AttachedToEquipment": "multisensor_6",
+      "AttachedToEquipment": "PC2multisensor_6",
       "SensorModel": "DHT22",
       "InputValueLowerBound": 0,
       "InputValueUpperBound": 100,
@@ -155,24 +155,5 @@
     } 
   ],
   "SwitchingPorts": [
-    {
-      "NodeName": "SmartPlug",
-      "PortType": "switch",
-      "PortName": "Switch",
-      "PortLabel": "mini_smart_plug",
-      "PollingIntervalInSeconds": 15,
-      "AttachedToEquipment": "SmartPlug",
-      "SwitchStatus": 0,
-      "ControlType": "Switch",
-      "InputValueUnitName": "N/A",
-      "InputValueUnitSymbol": "N/A",
-      "BrandName": "zwave mini smart plug",
-      "Model": "MP21Z",
-      "Network Source": "Z-Wave",
-      "AssociatedRaspberryPiUnit": "RP001" ,
-      "LowerLimit": 0,
-      "UpperLimit": 1,
-      "PreviousSampleTime": 0
-    }
   ]
 }
