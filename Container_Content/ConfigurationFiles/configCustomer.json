@@ -155,5 +155,24 @@
     } 
   ],
   "SwitchingPorts": [
+        {
+      "NodeName": "2ndSmartPlug",
+      "PortType": "switch",
+      "PortName": "Switch",
+      "PortLabel": "PC2_mini_smart_plug",
+      "PollingIntervalInSeconds": 15,
+      "AttachedToEquipment": "2ndSmartPlug",
+      "SwitchStatus": 0,
+      "ControlType": "Switch",
+      "InputValueUnitName": "N/A",
+      "InputValueUnitSymbol": "N/A",
+      "BrandName": "zwave mini smart plug",
+      "Model": "MP21Z",
+      "Network Source": "Z-Wave",
+      "AssociatedRaspberryPiUnit": "RP001" ,
+      "LowerLimit": 0,
+      "UpperLimit": 1,
+      "PreviousSampleTime": 0
+    }
   ]
 }
