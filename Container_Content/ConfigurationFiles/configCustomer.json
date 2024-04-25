@@ -19,9 +19,9 @@
       "UnitName": "RP001",
       "ip_address_homeAssist": "localhost",
       "portHomeAssist": "8123",
-      "api_token_homeAssist": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmYjk5NGJlNzlhZGI0NjczOTc3NWMwMWMwZjk0YjYwNyIsImlhdCI6MTcxMzQ2NzU1NywiZXhwIjoyMDI4ODI3NTU3fQ.8k5Y4idmkfKkvVPPE7A-AfnEBRD00yRHI2mnzlnVff4",
+      "api_token_homeAssist": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1OTZiZWVmMDQ4N2U0OGRlYjZiOWZlOWIzNzE2MzYzNiIsImlhdCI6MTcxMzQ2OTA0MSwiZXhwIjoyMDI4ODI5MDQxfQ.UorFIGTBT63kcJcGiWcSuWb4xZSTT0HDhsYn3b_Aj4E",
       "headers": {
-        "Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmYjk5NGJlNzlhZGI0NjczOTc3NWMwMWMwZjk0YjYwNyIsImlhdCI6MTcxMzQ2NzU1NywiZXhwIjoyMDI4ODI3NTU3fQ.8k5Y4idmkfKkvVPPE7A-AfnEBRD00yRHI2mnzlnVff4",
+        "Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1OTZiZWVmMDQ4N2U0OGRlYjZiOWZlOWIzNzE2MzYzNiIsImlhdCI6MTcxMzQ2OTA0MSwiZXhwIjoyMDI4ODI5MDQxfQ.UorFIGTBT63kcJcGiWcSuWb4xZSTT0HDhsYn3b_Aj4E",
         "Content-Type": "application/json"
       },
       "PreviousIpSynchronizationTimeStamp": 0
