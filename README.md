@@ -10,10 +10,6 @@ Debian version: 12 (bookworm)
 ## HAS Version & Other related:
 HAS version 1.7.0
 
-## Things to add
-- Logging errors
-- Remote login 
-
 ## Obtaining the Image 
 - The latest image created should be stored on DockerHub. Any new images that are made and found to be stable can be pushed here.
 - All of our image iterations can be found using this link: https://hub.docker.com/repository/docker/gtemplin/iac_convenient_data_collection/general
