@@ -25,5 +25,3 @@ HAS version 1.7.0
 - In the 'HelperScripts' subdirectory, you will find two shell scripts. One called 'run.sh' and another called 'clean.sh'.
 - run.sh will go to 'Container_Content', build the image using the Dockerfile/dependencies, and then run the container.
 - clean.sh can be ran once the running container is stopped, and it will delete the container and it's associated image. This is done so that only the most recent version of the image exists at any time. 
-
-## Things to Note 
